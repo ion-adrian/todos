@@ -20,13 +20,28 @@
         ----------HEADER-----------
     <header>-->
     <div id="headerId" class="row vertical-align h-10 ">
-        <div id="headerMenuId" class="col-2 border border-info">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="/graphics/menu_down.png" />
-            </a>
+        <!--<div id="headerMenuId" class="col-2 border border-info">-->
+
+
+
+        <div class="col-3 dropdown">
+            <button type="button" class="btn btn-light" href="#" id="imageDropdown" data-toggle="dropdown">
+                <img src="file:graphics/menu_down.png"  height="70">
+            </button>
+            <ul  class="dropdown-menu pull-right"  role="menu" aria-labelledby="dlabel">
+
+                <li><a class="nav-link active" role="menuitem" tabindex="-1" href="#">Add Task</a></li>
+                <li role="presentation"><a class="nav-link active" role="menuitem" tabindex="-1" href="#">Add Group</a></li>
+                <li class="divider"></li>
+                <li role="presentation"><a class="nav-link active" role="menuitem" tabindex="-1" href="#">Log Out</a></li>
+
+            </ul>
         </div>
 
-        <div id="headerContentId" class="col-7 border border-info">others</div>
+
+        <!--</div>-->
+
+        <div id="headerContentId" class="col-6 border border-info">others</div>
 
         <div id="headerCalendarId"class="col-3 border border-info">calendar</div>
     </div>
